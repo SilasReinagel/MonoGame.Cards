@@ -1,0 +1,44 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MonoDragons.Core", "MonoDragons.Core.csproj", "{A33F8FE3-A35A-4DDF-B96C-0157224F602C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MonoDragons.MazeWalkers", "..\MonoDragons.MazeWalkers\MonoDragons.MazeWalkers.csproj", "{8952D0A4-EA25-422A-919E-B77FBAEE936C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MonoDragons.Core.Tests", "..\MonoDragons.Core.Tests\MonoDragons.Core.Tests.csproj", "{C89C2095-B6EA-409D-882C-CDD00CDB3E5A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A33F8FE3-A35A-4DDF-B96C-0157224F602C}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{A33F8FE3-A35A-4DDF-B96C-0157224F602C}.Debug|x86.ActiveCfg = Debug|x86
+		{A33F8FE3-A35A-4DDF-B96C-0157224F602C}.Debug|x86.Build.0 = Debug|x86
+		{A33F8FE3-A35A-4DDF-B96C-0157224F602C}.Release|Any CPU.ActiveCfg = Release|x86
+		{A33F8FE3-A35A-4DDF-B96C-0157224F602C}.Release|x86.ActiveCfg = Release|x86
+		{A33F8FE3-A35A-4DDF-B96C-0157224F602C}.Release|x86.Build.0 = Release|x86
+		{8952D0A4-EA25-422A-919E-B77FBAEE936C}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{8952D0A4-EA25-422A-919E-B77FBAEE936C}.Debug|x86.ActiveCfg = Debug|x86
+		{8952D0A4-EA25-422A-919E-B77FBAEE936C}.Debug|x86.Build.0 = Debug|x86
+		{8952D0A4-EA25-422A-919E-B77FBAEE936C}.Release|Any CPU.ActiveCfg = Release|x86
+		{8952D0A4-EA25-422A-919E-B77FBAEE936C}.Release|x86.ActiveCfg = Release|x86
+		{8952D0A4-EA25-422A-919E-B77FBAEE936C}.Release|x86.Build.0 = Release|x86
+		{C89C2095-B6EA-409D-882C-CDD00CDB3E5A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C89C2095-B6EA-409D-882C-CDD00CDB3E5A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C89C2095-B6EA-409D-882C-CDD00CDB3E5A}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{C89C2095-B6EA-409D-882C-CDD00CDB3E5A}.Debug|x86.Build.0 = Debug|Any CPU
+		{C89C2095-B6EA-409D-882C-CDD00CDB3E5A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C89C2095-B6EA-409D-882C-CDD00CDB3E5A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C89C2095-B6EA-409D-882C-CDD00CDB3E5A}.Release|x86.ActiveCfg = Release|Any CPU
+		{C89C2095-B6EA-409D-882C-CDD00CDB3E5A}.Release|x86.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
