@@ -1,5 +1,4 @@
 ﻿using MonoDragons.Core.Entities;
-using MonoDragons.Core.PhysicsEngine;
 using MonoDragons.Core.UserInterface;
 
 namespace MonoDragons.Core.Render
@@ -10,8 +9,7 @@ namespace MonoDragons.Core.Render
         {
             entities.ForEach(
                 e => e.With<TextDisplay>(
-                    text => e.With<Spatial2>(
-                        spatial => UI.DrawTextCentered(text.Text(), spatial.Transform.ToRectangle(), text.Color, text.Font))));
+                    text => UI.DrawTextCentered(text.Text(), e.Transform.ToRectangle(), text.Color, text.Font)));
         }
     }
 }

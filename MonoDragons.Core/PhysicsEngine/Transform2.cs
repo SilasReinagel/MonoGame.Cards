@@ -48,6 +48,11 @@ namespace MonoDragons.Core.PhysicsEngine
             ZIndex = zIndex;
         }
 
+        public bool Intersects(Point point)
+        {
+            return ToRectangle().Contains(point);
+        }
+
         public bool Intersects(Transform2 other)
         {
             return ToRectangle().Intersects(other.ToRectangle());

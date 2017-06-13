@@ -39,7 +39,7 @@ namespace MonoDragons.Core.PhysicsEngine
 
         private Transform2 GetProposedMotion(GameObject o, TimeSpan time)
         {
-            return o.Get<Spatial2>().Transform + o.Get<Motion2>().Velocity.GetDelta(time);
+            return o.Transform + o.Get<Motion2>().Velocity.GetDelta(time);
         }
     }
 }

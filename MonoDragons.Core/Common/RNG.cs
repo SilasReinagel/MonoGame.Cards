@@ -28,6 +28,11 @@ namespace MonoDragons.Core.Common
             return Instance.Next(min, max);
         }
 
+        public static double Dbl()
+        {
+            return Instance.NextDouble();
+        }
+
         public static KeyValuePair<T, T2> Random<T, T2>(this Dictionary<T, T2> dictionary)
         {
             return dictionary.ElementAt(Int(dictionary.Count));
@@ -41,6 +46,11 @@ namespace MonoDragons.Core.Common
         public static T Random<T>(this List<T> list)
         {
             return list[Int(list.Count)];
+        }
+
+        public static T Between<T>(T primary, T other, double primaryWeight)
+        {
+            return Dbl() <= primaryWeight ? primary : other;
         }
     }
 }

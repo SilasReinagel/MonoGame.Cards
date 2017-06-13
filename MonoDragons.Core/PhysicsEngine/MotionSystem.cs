@@ -7,9 +7,8 @@ namespace MonoDragons.Core.PhysicsEngine
     {
         public void Update(IEntities entities, TimeSpan delta)
         {
-            entities.ForEach(x => x.With<Spatial2>(
-                spatial => x.With<Motion2>(
-                    motion => spatial.Transform.Location = spatial.Transform.Location + motion.Velocity.GetDelta(delta))));
+            entities.ForEach(e => e.With<Motion2>(
+                x => e.Transform.Location = e.Transform.Location + x.Velocity.GetDelta(delta)));
         }
     }
 }

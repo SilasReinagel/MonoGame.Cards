@@ -9,5 +9,17 @@ namespace MonoDragons.Core.Common
             if (condition)
                 action();
         }
+
+        public static void If<T>(this T obj, Predicate<T> condition, Action action)
+        {
+            if (condition(obj))
+                action();
+        }
+
+        public static void If<T>(this T obj, Predicate<T> condition, Action<T> action)
+        {
+            if (condition(obj))
+                action(obj);
+        }
     }
 }

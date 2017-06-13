@@ -24,5 +24,10 @@ namespace MonoDragons.Core.Engine
                 _elapsedMs -= _intervalMs;
             }
         }
+
+        public void Reset()
+        {
+            _elapsedMs = 0;
+        }
     }
 }

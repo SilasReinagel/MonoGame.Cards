@@ -1,4 +1,6 @@
-﻿namespace MonoDragons.Core.Entities
+﻿using MonoDragons.Core.PhysicsEngine;
+
+namespace MonoDragons.Core.Entities
 {
     public static class Entity
     {
@@ -10,9 +12,9 @@
             return System;
         }
 
-        public static GameObject Create()
+        public static GameObject Create(Transform2 transform)
         {
-            return Objs.Create();
+            return Objs.Create(transform);
         }
     }
 }

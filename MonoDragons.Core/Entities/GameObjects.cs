@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using MonoDragons.Core.PhysicsEngine;
 
 namespace MonoDragons.Core.Entities
 {
@@ -9,9 +10,9 @@ namespace MonoDragons.Core.Entities
 
         private int _nextId;
         
-        public GameObject Create()
+        public GameObject Create(Transform2 transform)
         {
-            var obj = new GameObject(_nextId++);
+            var obj = new GameObject(_nextId++, transform);
             _entities.Add(obj);
             return obj;
         }

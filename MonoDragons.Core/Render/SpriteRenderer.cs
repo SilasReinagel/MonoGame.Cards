@@ -8,9 +8,8 @@ namespace MonoDragons.Core.Render
     {
         public void Draw(IEntities entities)
         {
-            entities.ForEach(x => x.With<Spatial2>(
-                spatial => x.With<Sprite>(
-                    sprite => World.Draw(sprite.Name, spatial.Transform))));
+            entities.ForEach(e => e.With<Sprite>(
+                sprite => World.Draw(sprite.Name, e.Transform)));
         }
     }
 }
